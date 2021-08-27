@@ -11,14 +11,10 @@ void debug_out(Head H, Tail ...T)
 }
 #define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
 
-const string File[] = {"0", "1"};
-
-bool Index_File_Input;
-
-// List
 // IDWord has the role of linking words and its index
 map <string, int> IDWord;
 
+// Store synonyms
 vector <vector <string>> Group;
 
 int Count_Words = 0;
@@ -41,15 +37,7 @@ void ImportData()
 {
     // Index_File_Input is index of file INPUT
 
-    ifstream FileState;
-    FileState.open("tmp.txt"); // file FileState contains the index of file INPUT last time
-    FileState >> Index_File_Input;
-    FileState.close();
-
-    Index_File_Input = !Index_File_Input;
-
-    ifstream FileIn;
-    FileIn.open(File[Index_File_Input] + ".txt");
+    ifstream FileIn("Data.txt");
 
     string Information;
     getline(FileIn, Information);
@@ -81,14 +69,7 @@ void ImportData()
 
 void ExportData()
 {
-    ofstream FileState_new;
-    FileState_new.open("tmp.txt");
-    FileState_new << Index_File_Input;
-    FileState_new.close();
-
-    bool Index_File_Output = !Index_File_Input;
-    ofstream FileOut;
-    FileOut.open(File[Index_File_Output] + ".txt");
+    ofstream FileOut("Data.txt");
 
     FileOut << Count_Words << '\n';
     for (auto &x : IDWord)
@@ -107,10 +88,11 @@ bool Check_Word(string str)
 int EnterOption()
 {
     cout << "Options:\n";
-    cout << "1.Check whether the word has been added before or not\n";
-    cout << "2.Add a new word\n";
-    cout << "3.Add a word to group of synonyms\n";
-    cout << "4.Show synonyms of a word\n";
+    cout << "   1.Check whether the word has been added before or not\n";
+    cout << "   2.Add a new word\n";
+    cout << "   3.Add a word to group of synonyms\n";
+    cout << "   4.Show synonyms of a word\n";
+    cout << "   0.Exit program\n";
 
     int Selection = 0;
     do
@@ -122,7 +104,7 @@ int EnterOption()
         }
         cin >> Selection;
         cin.ignore(1);
-    } while (1 > Selection || Selection > 4);
+    } while (Selection < 0 || Selection > 4);
     return Selection;
 }
 
@@ -176,6 +158,8 @@ void MainProgram()
     do
     {
         int Selection = EnterOption();
+        if (!Selection) break;
+
         string word = EnterWord();
 
         int GroupID = ((IDWord.find(word) != IDWord.end()) ? root(IDWord[word]) : 0);
@@ -223,7 +207,7 @@ void MainProgram()
 
                         Join(IDWord[other_word], IDWord[word]);
 
-                        cout << "-The words has been merged!\n";
+                        cout << "-The words have been merged!\n";
                         break;
                     }
                     else

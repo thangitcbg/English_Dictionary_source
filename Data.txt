@@ -1,0 +1,121 @@
+120
+#anh huong xau 61 19
+#bo tu 103 103
+#boi vi 57 58
+#ca nhan 63 63
+#cach giai quyet 79 8
+#cau ket 114 113
+#co ban 41 42
+#co hoi 46 46
+#dich vu 33 33
+#doi pho 51 49
+#doi pho voi 49 49
+#gay hai 62 19
+#giai quyet 99 99
+#giam bot 85 80
+#giam giu 104 103
+#hieu qua 89 21
+#huong giai quyet 77 8
+#kho khan 119 119
+#lam giam 86 80
+#mot vai 72 72
+#nen mong 42 42
+#nghe nghiep 65 65
+#nha tu 107 26
+#nong thon 74 74
+#pham toi 53 28
+#phuong phap 78 8
+#quan trong 36 36
+#quyen cong dan 109 109
+#thanh nien 68 68
+#thong dong 113 113
+#tinh huong 110 110
+#toi pham 35 25
+#van de 54 55
+#xa hoi van minh 31 30
+#xem xet 116 116
+abate 84 80
+affect 15 16
+approach 11 8
+basic 44 42
+because 58 58
+break a law 98 28
+career 67 65
+chance 47 46
+circumstance 111 110
+civil right 108 109
+civilized society 30 30
+collude 115 113
+commit a crime 27 28
+commit illegality 28 28
+consider 117 116
+contribute 29 29
+cope with 52 49
+crime 88 88
+criminal 25 25
+crucial 39 36
+cut down 82 80
+damage 34 19
+deal with 50 49
+decrease 87 80
+detrimental 19 19
+difficulty 120 119
+diminish 81 80
+due to +N 59 58
+due to the fact that 60 58
+education 7 7
+effect 12 13
+effective 90 21
+efficient 21 21
+electric game 4 3
+eliminate 6 6
+essential 40 36
+exert an effect 17 16
+fundamental 43 42
+game 5 3
+harmful 20 19
+have an effect 16 16
+hello 1 2
+hi 2 2
+impact 13 13
+important 37 36
+imprison 105 103
+incarcerate 102 103
+individual 64 63
+influence 14 13
+influent 18 16
+issue 56 55
+jail 26 26
+job 66 65
+lawbreaker 93 25
+lower 83 80
+measure 9 8
+method 8 8
+mure 106 103
+offender 91 25
+opportunity 48 46
+perpetrator 94 25
+person who has committed a crime 24 25
+play a vital role 38 36
+primary 45 42
+prison 23 26
+problem 55 55
+productive 22 21
+reduce 80 80
+rural area 75 74
+service 32 33
+several 73 72
+sin 97 28
+sinner 95 25
+situation 112 110
+solution 10 8
+solve 100 99
+tackle 101 99
+take into account 118 116
+teenager 69 68
+the countryside 76 74
+transgress 96 28
+video game 3 3
+wrongdoer 92 25
+younger 70 68
+youngster 71 68

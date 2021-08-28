@@ -11,7 +11,7 @@ void debug_out(Head H, Tail ...T)
 }
 #define debug(...) cerr << "[" << #__VA_ARGS__ << "]:", debug_out(__VA_ARGS__)
 
-// IDWord has the role of linking words and its index
+// IDWord has the role of linking words and their indices
 map <string, int> IDWord;
 
 // Store synonyms
